@@ -25,8 +25,8 @@ const phraseFinder = (intcode) => {
 };
 
 const awnsers = (intcode) => ({
-    1: opcodeReader(initialIntcode),
-    2: phraseFinder(initialIntcode),
+    1: opcodeReader(intcode),
+    2: phraseFinder(intcode),
 });
 
 console.log(awnsers(initialIntcode));
