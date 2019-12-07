@@ -6,7 +6,7 @@ const add = (a, b) => a + b;
 const multiply = (a, b) => a * b;
 
 const opcodeReader = (intcode, position = 0) => {
-    const instruction = intcode.slice(position, position + 4, lastHalt=undefined);
+    const instruction = intcode.slice(position, position + 4);
     if (instruction[0] === 99) return intcode[0];
     const method = instruction[0] === 1 ? add : multiply;
     intcode[instruction[3]] = method(intcode[instruction[1]], intcode[instruction[2]]);
