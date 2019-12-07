@@ -1,3 +1,4 @@
+// https://adventofcode.com/2019/day/4
 const passwordLimits = { min: 307237, max: 769058 };
 
 const passwordRange = Array.from(new Array(passwordLimits.max - passwordLimits.min + 1), (x,i) => String(i + passwordLimits.min));
